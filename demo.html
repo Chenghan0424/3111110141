@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body><h2>段落(P)</h2>
+<body><h2 id="up">段落(P)</h2>
     <p>段落</p>
     <hr>
     <h2>標籤(span)</h2>
@@ -15,16 +15,16 @@
     科技大學
     <hr>
     <h2>換行(br)</h2>
-    123<br>
-    456
-    <hr>
+        123<br>
+        456
+        <hr>
     <h2>格式化段落(pre)</h2>    
-    <pre>ABCD
+        <pre>ABCD
         123
            456
               789
-    </pre>
-    <hr>
+        </pre>
+        <hr>
     <h2>文字格式化</h2>
         <b>粗體</b><br>
         <i>斜體</i><br>
@@ -34,7 +34,33 @@
         <del>刪除標示</del><br>
         <mark>標註</mark><br>
         <hr>
+    <h2>連結(a)</h2>
+        <a href="https://www.google.com.tw/?hl=zh_TW" target="_blank">google</a>
+        <br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br>
+        <a href="#up">top</a>
+    <h2>圖片(img)</h2>
+        <img width="250" height="250" src="data:image/png;base64,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" alt="">
+        <img width="250" height="250" src="images.jpg" alt="">
+        <hr>
+        <h2>列表</h2>
+        <ul type="square">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+        <ol type="I">
+                <LI>1</LI>
+                <LI>2</LI>
+                <LI>3</LI>
+                <LI>4</LI>
+        </ol>
+        <dl>
+            <dt>姓名</dt>
+            <dd>負債恩</dd>
+        </dl>
 
-    
 </body>
 </html>
